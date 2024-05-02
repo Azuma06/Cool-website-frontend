@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csgo</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script>
+      // Wait for the DOM content to load
+      document.addEventListener("DOMContentLoaded", function() {
+          // Function to apply animation delays to spans
+          function applyAnimationDelays() {
+            const spans = document.querySelectorAll('p[aria-label="Geist Sans"] span');
+            const numLetters = spans.length;
+        
+            spans.forEach(function(span, i) {
+              const mappedIndex = i - (numLetters / 2);
+              span.style.animationDelay = (mappedIndex * 0.25) + 's';
+            });
+          }
+        
+          // Call the function
+          applyAnimationDelays();
+        });
+      </script>
+<body>
+<div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <p aria-label="Geist Sans">
+                <span aria-hidden="true">P</span><span aria-hidden="true">i</span><span aria-hidden="true">x</span><span aria-hidden="true">e</span><span aria-hidden="true">l</span><span aria-hidden="true"> </span><span aria-hidden="true">S</span><span aria-hidden="true">c</span><span aria-hidden="true">o</span><span aria-hidden="true">r</span><span aria-hidden="true">e</span>
+              </p>
+            </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Notícias</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Tutoriais</a>
+              </li> 
+
+              </li>      
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+      
+      <div class="activity-feed">
+        <p class="marquee"><span><span>Notícias:</span><span>Novo DLC do 'Cyberpunk 2077' traz missões e áreas extras</span><span>Among Us' terá novos mapas e modos em breve</span><span>Halo Infinite' gera expectativas após adiamento</span><span>Elden Ring' promete um mundo vasto e desafiador</span><span>Evento de aniversário de 'Overwatch' com skins e desafios especiais</span><span>Nintendo anuncia remaster de clássicos 'Zelda' para Switch</span><span>The Witcher: Monster Slayer' atinge 10 milhões de downloads</span><span>Próxima geração do PlayStation pode ter realidade virtual aprimorada</span></span></p>
+      </div>
+      </div>  
+      
+    </div>
+
+
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let interval = null;
+      
+        document.querySelector(".inicio h1").onmouseover = event => {
+          let iteration = 0;
+      
+          clearInterval(interval);
+      
+          interval = setInterval(() => {
+            event.target.innerText = event.target.innerText
+              .split("")
+              .map((letter, index) => {
+                if (index < iteration) {
+                  return event.target.dataset.value[index];
+                }
+      
+                return letters[Math.floor(Math.random() * 26)];
+              })
+              .join("");
+      
+            if (iteration >= event.target.dataset.value.length) {
+              clearInterval(interval);
+            }
+      
+            iteration += 1 / 3;
+          }, 30);
+        };
+      });
+      
+        </script>
+         <div class="inicio">
+          <h1 data-value="PIXEL SCORE">PIXEL SCORE</h1>
+
+      </div>
+
+
+      <section id="portfolio" class="portfolio section-padding">
+<br>
+        <!-- Home cards 1 -->
+        <section class="team section-padding" id="about">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Ultimas notícias</h2>
+                    </div>
+                </div>
+            </div>
+
+        <section class="home-cards">
+          <div>
+            <img src="img/cyberpunk-2077-ps4.original-3207577494.jpg" alt="">
+            <h3>Última atualização de Cyberpunk 2077 </h3>
+            <p>
+              Mergulhe nas paisagens renovadas de Night City e experimente um novo nível de jogabilidade envolvente com a atualização mais recente do Cyberpunk 2077.
+            </p>
+            <a href="teste.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/elden-ring-from-software-1-2837287957.jpg" alt="" />
+            <h3>Trailer de Elden Ring revela batalhas épicas e mundo aberto</h3>
+            <p>
+              Dê uma olhada no mundo de tirar o fôlego e no combate intenso em Elden Ring, o jogo altamente aguardado da FromSoftware e George R.R. Martin.
+            </p>
+            <a href="elden.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/horizon-forbidden-west-spear-3167909403.jpg" alt="" />
+            <h3>PlayStation Showcase revela a impressionante jogabilidade de Horizon Forbidden West</h3>
+            <p>
+              Explore o mundo vibrante e perigoso de Horizon Forbidden West na jogabilidade revelada no PlayStation Showcase – um banquete visual aguarda os jogadores.
+            </p>
+            <a href="horizon.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/JMEOFX5LDJCZBKMBLRHJXRMU4I-1419009447.jpg" alt="" />
+            <h3>Novo: Nintendo Switch OLED</h3>
+            <p>
+              Descubra as cores vibrantes e a jogabilidade envolvente do novo modelo Nintendo Switch OLED – uma atualização visual para os entusiastas de jogos.
+            </p>
+            <a href="switch.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </section>
+        <section class="home-cards">
+          <div>
+            <img src="img/halo-master-chief.jpg" alt="">
+            <h3>Halo Infinite Multiplayer Beta Impressions</h3>
+            <p>
+              Mergulhe na versão beta multijogador Halo Infinite repleta de ação e experimente a emoção do retorno de Master Chief nesta parcela do jogo altamente aguardada.
+            </p>
+            <a href="halo.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/27ranked-br-modetiles-trios-1920x1080-1920x1080-160f3b8fd48c.jpg" alt="" />
+            <h3>Fornite Chapter 3 Launches </h3>
+            <p>
+              Explore a ilha renovada, novas mecânicas e batalhas intensas enquanto Fortnite entra em seu emocionante Capítulo 3 – uma nova experiência aguarda jogadores ansiosos.
+            </p>
+            <a href="fortnite.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/NewWorld_Combat_01_1920x1080.jpg" alt="" />
+            <h3>Última Atualização de New World </h3>
+            <p>
+              Embarque em expedições emocionantes e enfrente desafios dinâmicos na última atualização de New World - uma experiência MMO em constante evolução para aventureiros.
+            </p>
+            <a href="world.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div>
+            <img src="img/i536718.jpeg" alt="" />
+            <h3>Pokémon Brilliant Diamond e Shining Pearl: Nostalgia Redefinida</h3>
+            <p>
+              Experimente a amada região de Sinnoh sob uma nova perspectiva com Pokémon Brilliant Diamond e Shining Pearl - uma jornada nostálgica recriada para uma nova geração de treinadores.
+            </p>
+            <a href="pokemon.html">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </section>    
+       
+          </section>
+      </section>
+      <section class="team section-padding" id="services">
+        <div class="container mt-5 mb-5">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="section-header text-center pb-5">
+                      <h2>Tutoriais de Jogo</h2>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <center>
+          <article class="gallery">
+            <a href="https://www.techtudo.com.br/dicas-e-tutoriais/2020/03/dicas-de-super-mario-world-para-mandar-bem-no-classico-jogo-da-nintendo.ghtml">
+            <img src="img/super_imgsuper_mario_bros-_e_um_jogo_bem_mais_dificil_do_que_voce_imaginava.webp" alt="Super Mario Bros" />
+            </a>
+            <blockquote class="quote spacer">
+              <span>Without music, life would be a mistake.</span>
+              <cite>&mdash;Friedrich Nietzsche</cite>
+            </blockquote>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2269916214">
+            <img src="img/crash-bandicoot-4-its-about-time-officially-announced-with-debut-trailer-1592839132124.webp" alt="Crash Bandicoot" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2819056504">
+            <img src="img/metal.jpg" alt="Metal Slug" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2420716328">
+            <img src="img/i331132.jpeg" alt="Dark Souls Remastered" />
+            </a>
+            <a href="https://magnaway.com.br/guias/15339/forza-horizon-5-guia-de-conquistas-completo/">
+            <img src="img/forza-horizon-.webp" alt="Forza Horizon 5" />
+            </a>
+            <div class="spacer"></div>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2929892913">
+            <img src="img/Hogwarts_Legacy_novo_video_combate_voo_criacao_de_itens-.webp" alt="Hogwards Legacy" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2581600455">
+            <img src="img/mind-controle-superho.webp" alt="Superhot" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1078947416">
+            <img src="img/apps.14501.68688977722932617.c18986e0-354d-49e5-a689-33d52a7432cb.jpg" alt="Firewatch" />
+            </a>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=657680439">
+            <img src="img/captura-de-tela-de-gta-v-original2.webp" alt="GTA V" />
+            </a>
+            <a href="https://playvalorant.com/pt-br/news/announcements/beginners-guide/">
+            <img src="img/valorant1.webp" alt="valorant" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2401463292">
+            <img src="img/bfb04be87f9f727e319a75857b4cbb894d288c90c6ecb0a5c4003b30b3dcf9de.avif" alt="Hades" />
+            </a>
+            <div class="spacer"></div>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=462248459">
+            <img src="img/ark.jpg" alt="woman singing" />
+            </a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1618795094">
+            <img src="img/half-life-gordon-freeman.webp" alt="Half Life" />
+            </a>
+          </article>
+      </center>
+      </section>
+      <section id="jogar" class="joga">
+
+        
+        <script src="noticia.js"></script>
+      </section>
+      <section id="contact" class="contact section-padding">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Entrar em contato</h2>
+                        <p>Adorariamos receber a sua opinião.</p>
+                    </div>
+                </div>
+            </div>
+			<div class="row m-0">
+				<div class="col-md-12 p-0 pt-4 pb-4">
+					<form action="#" class="bg-light p-4 m-auto">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="mb-3">
+									<input class="form-control" placeholder="Nome completo" required="" type="text">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<input class="form-control" placeholder="Email" required="" type="email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<textarea class="form-control" placeholder="Mesagem" required="" rows="3"></textarea>
+								</div>
+							</div><button class="btn btn-warning btn-lg btn-block mt-3" type="button" style="background-color: #f08cb6;">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+      </section>
+      <footer class="bg-dark p-2 text-center">
+          <div class="container">
+              <p class="text-white">Pixel Score - 2023 - Todos os Direitos Reservados</p>
+          </div>
+      </footer>
+
+
+
+
+
+
+
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

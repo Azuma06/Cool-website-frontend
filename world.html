@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csgo</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+<script>
+// Wait for the DOM content to load
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to apply animation delays to spans
+    function applyAnimationDelays() {
+      const spans = document.querySelectorAll('p[aria-label="Geist Sans"] span');
+      const numLetters = spans.length;
+  
+      spans.forEach(function(span, i) {
+        const mappedIndex = i - (numLetters / 2);
+        span.style.animationDelay = (mappedIndex * 0.25) + 's';
+      });
+    }
+  
+    // Call the function
+    applyAnimationDelays();
+  });
+</script>
+<body>
+<div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <div class="container">
+                <p aria-label="Geist Sans">
+                  <span aria-hidden="true">P</span><span aria-hidden="true">i</span><span aria-hidden="true">x</span><span aria-hidden="true">e</span><span aria-hidden="true">l</span><span aria-hidden="true"> </span><span aria-hidden="true">S</span><span aria-hidden="true">c</span><span aria-hidden="true">o</span><span aria-hidden="true">r</span><span aria-hidden="true">e</span>
+                </p>
+              </div>
+            </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"></a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#services"></a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team"></a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#jogar"></a>
+              </li>      
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#portfolio">Voltar</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+      
+      <div class="activity-feed">
+        <p class="marquee"><span><span>Notícias:</span><span>Novo DLC do 'Cyberpunk 2077' traz missões e áreas extras</span><span>Among Us' terá novos mapas e modos em breve</span><span>Halo Infinite' gera expectativas após adiamento</span><span>Elden Ring' promete um mundo vasto e desafiador</span><span>Evento de aniversário de 'Overwatch' com skins e desafios especiais</span><span>Nintendo anuncia remaster de clássicos 'Zelda' para Switch</span><span>The Witcher: Monster Slayer' atinge 10 milhões de downloads</span><span>Próxima geração do PlayStation pode ter realidade virtual aprimorada</span></span></p>
+      </div>
+      </div>  
+      
+    </div>
+
+    <div id="carouselExampleIndicators" class="container my-5">
+      <div style="max-width: 1000px; top: -80px; padding-top: 100px;" class="mx-auto text-secondary">
+        <div>
+            <small>
+              <a href="#" class="text-primary">Epic Games</a>, <a href="#" class="text-primary">Fortnite</a>
+          </small>
+        </div>
+        <h1 class="font-weight-bold text-dark">New World recebe atualização com nova arma, expedição e conteúdos
+    </h1>
+        <p class="my-2" style="line-height: 2;">A Amazon Games lançou uma nova atualização para o New World, seu MMORPG de mundo aberto. A atualização, chamada de Eternal Frost, foi lançada em 12 de dezembro de 2023 e traz uma série de novos conteúdos para o jogo</p>
+        
+        <div class="my-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+          <img src="img/8fa-792923440.jpg" style="width: 50px;"/>
+          <small class="ml-2">
+            <a href="#" class="text-primary d-block">Arthur Karoly</a>
+            <span>Dez 12</span>
+          </small>
+        </div>
+          <div class="text-primary">
+             <a href="/#" class="mx-1">
+                <svg fill="#f08cb6" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                   <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                      5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                      -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                      0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                      -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                      0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                      -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                      0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                      -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                      -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                      1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                      -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                      6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                      0.771,-0.67 1.054,-1.093Z"></path>
+                </svg>
+             </a>
+             <a href="/#" class="w-6 mx-1">
+                <svg fill="#f08cb6" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                   <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                      5.373,-12 12,-12c6.627,0 12,5.373
+                      12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                      0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                      -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                </svg>
+             </a>
+             <a href="/#" class="w-6 mx-1">
+                <svg fill="#f08cb6" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                   <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                      3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                      -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                      -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                      -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                      0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                      3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                      -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                      -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                      1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                      -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                      -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                      0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                      0.4,1.5l0,4.5l2.9,0Z"></path>
+                </svg>
+             </a>
+          </div>
+        </div>
+        </div>
+      <img class="w-100 my-3" src="img/new-world-12-2509675530.jpg" />
+      
+      <div style="max-width: 700px; top: -80px;" class="mx-auto text-secondary">
+        <br>
+        <h3 class="font-weight-bold text-dark">A atualização traz:</h3>
+
+        <ul>
+          <li><b>Uma nova arma: </b>A nova arma é a Picareta de Gelo, uma arma de duas mãos que causa dano de gelo. A Picareta de Gelo é uma arma poderosa que pode ser usada para derrotar inimigos e quebrar gelo.</li>
+          <li><b>Uma nova expedição: </b>A nova expedição é a Lago Glacial, uma expedição de nível 60 que leva os jogadores a um complexo de cavernas congelado. A Lago Glacial é uma expedição desafiadora que oferece recompensas valiosas.</li>
+          <li><b>Novos conteúdos: </b>A atualização também traz uma variedade de outros conteúdos novos, incluindo: </li>
+            <ul>
+              <li>Novas habilidades para as armas existentes</li>
+              <li>Novo conteúdo para o sistema de crafting</li>
+              <li>Novo conteúdo para o sistema de PvP</li>
+            </ul>
+        </ul>
+        <br>
+
+
+        <br>
+    
+        <h3 class="font-weight-bold text-dark">Recepção</h3>
+        <p class="my-2" style="line-height: 2;">A atualização Eternal Frost foi recebida com elogios da crítica e dos jogadores. Os críticos elogiaram a nova arma, a nova expedição e os novos conteúdos. Os jogadores também estão satisfeitos com a atualização, que adiciona novos desafios e recompensas ao jogo.</p>
+
+
+          <p class="my-2" style="line-height: 2;">A Amazon Games está planejando lançar mais atualizações para o New World no futuro. A empresa está trabalhando em uma nova expansão, que será lançada em 2024.
+          </p>
+
+
+        <div class="my-3">
+          <small>
+              <a href="#" class="text-primary">#Fortnite</a>, <a href="#" class="text-primary">#Capítulo-3</a>, <a href="#" class="text-primary">#Epic Games</a>, <a href="#" class="text-primary">#Unreal Engine</a>, <a href="#" class="text-primary">#Atualização</a>
+          </small>
+        </div>
+        
+      </div>
+    </div>
+
+      <footer class="bg-dark p-2 text-center">
+          <div class="container">
+              <p class="text-white">Pixel Score - 2023 - Todos os Direitos Reservados</p>
+          </div>
+      </footer>
+
+
+
+
+
+
+
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
